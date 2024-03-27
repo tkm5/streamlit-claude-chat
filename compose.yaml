@@ -3,11 +3,11 @@ version: '3'
 services:
   streamlit:
     build: .
-    image: 'streamlit-claude-chat'
-    container_name: 'streamlit-claude-chat'
+    image: "streamlit-claude-chat"
+    container_name: "streamlit-claude-chat"
     env_file:
      - .env
     ports:          
-      - 8501:8501
+      - "8501:8501"
     tty: true
     stdin_open: true
